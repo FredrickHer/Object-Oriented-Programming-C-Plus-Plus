@@ -52,8 +52,20 @@ bool isGreaterThan(double x, int y){
 */
 string select(string func_type){
 
-    return "";
+    string out = "";
+
+    if (func_type == "sum"){
+        out = "The sum is ";
+    }else if (func_type == "divison"){
+        out = "The quotient is ";
+    }else if (func_type == "comparison"){
+        out = "The first value being greater than the second value is ";
+    }else{
+        out = "Invalid function type ";
+    }
+    return out;
 }
+
 /** myPrint
 * @brief Calls select() to print out the output with the correct prompt
 * @tparam T : (int, double, or string) output of sum, division, or isGreater Than
